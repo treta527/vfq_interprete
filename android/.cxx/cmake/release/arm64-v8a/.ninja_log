@@ -1,0 +1,8 @@
+# ninja log v5
+0	46	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp.o	55b9a329ec2edf40
+0	415	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	b1d7a737193d482a
+0	521	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o	5e9da70bb08626d3
+0	679	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o	59eb78d3da59bc7
+679	716	0	/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/release/obj/arm64-v8a/libverifiquese.so	744cd6932947a2cf
+1	599	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	b1d7a737193d482a
+599	713	0	/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/release/obj/arm64-v8a/libverifiquese.so	744cd6932947a2cf

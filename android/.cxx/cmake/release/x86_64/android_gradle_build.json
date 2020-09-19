@@ -1,0 +1,59 @@
+
+{
+	"buildFiles" : 
+	[
+		"/home/leonardo/CodeProjects/app/vfq_interprete/android/CMakeLists.txt"
+	],
+	"cleanCommands" : 
+	[
+		"/home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/x86_64 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"verifiquese-Release-x86_64" : 
+		{
+			"abi" : "x86_64",
+			"artifactName" : "verifiquese",
+			"buildCommand" : "/home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/x86_64 --target verifiquese",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/x86_64"
+				},
+				
+				{
+					"flags" : "  --target=x86_64-none-linux-android21 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/x86_64"
+				}
+			],
+			"output" : "/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/release/obj/x86_64/libverifiquese.so",
+			"toolchain" : "1492657421740662878"
+		}
+	},
+	"toolchains" : 
+	{
+		"1492657421740662878" : 
+		{
+			"cCompilerExecutable" : "/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

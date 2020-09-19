@@ -1,0 +1,21 @@
+# ninja log v5
+0	25	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp.o	181e4df2a30e1839
+0	602	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	a229ce390d7ba433
+0	828	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o	7a5cc5f9f0a02f25
+0	828	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o	c331ca696f4d441d
+0	849	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o	851d3d8db50c4bd0
+850	902	0	/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	c14c1c14d4ecdac7
+1	584	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o	c331ca696f4d441d
+584	636	0	/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	c14c1c14d4ecdac7
+1	613	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o	7a5cc5f9f0a02f25
+613	663	0	/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	c14c1c14d4ecdac7
+1	505	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	a229ce390d7ba433
+505	556	0	/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	c14c1c14d4ecdac7
+1	476	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	a229ce390d7ba433
+1	609	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o	c331ca696f4d441d
+609	660	0	/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	c14c1c14d4ecdac7
+1	590	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o	c331ca696f4d441d
+590	643	0	/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	c14c1c14d4ecdac7
+0	476	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	a229ce390d7ba433
+0	620	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o	851d3d8db50c4bd0
+620	674	0	/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	c14c1c14d4ecdac7

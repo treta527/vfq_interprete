@@ -1,0 +1,2 @@
+[1/2] Building CXX object CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o
+[2/2] Linking CXX shared library /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/release/obj/x86/libverifiquese.so

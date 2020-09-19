@@ -1,0 +1,3 @@
+/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/arm64-v8a/CMakeFiles/verifiquese.dir
