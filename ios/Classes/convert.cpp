@@ -7,6 +7,7 @@
 #include <stdlib.h>
 #include <string>
 #include <cstring>
+#include <memory>
 #include "convert.h"
 #include <iostream>
 
@@ -16,7 +17,7 @@ size_t getSizeArr(std::string str) {
     return str.size();
 }
 
-char* getCedulaColombianaData(char * rawDataOriginal, int length) {
+char* getCedulaColombianaData(char * rawDataOriginal, int length,int pdata) {
     printf("Entrando a método getCedulaColombiana ::: \n\n");
     int delta = 0;
     int deltaDepartment;
@@ -28,7 +29,7 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
     };
     char *response;
     char *verification;
-    char *rawData = new char[2400] {
+    char *rawData = new char[1400] {
         0
     };
     int sz = getSizeArr(rawDataOriginal);
@@ -36,8 +37,9 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
 
     int posRel = 0;
     for (int j = 0; j < length; j++) {
-       if (rawDataOriginal[j] == -64  ||  rawDataOriginal[j] == -81 || rawDataOriginal[j] == -62 ) {
-            std::cout << int(rawDataOriginal[j]) << "\n";
+//        if (rawDataOriginal[j] == -64  ) {
+        if (rawDataOriginal[j] == -64  ||  rawDataOriginal[j] == -81 || rawDataOriginal[j] == -62 ) {
+           // std::cout << int(rawDataOriginal[j]) << "\n";
             j++;
             rawData[posRel++] = ' ';
         } else {
@@ -49,11 +51,7 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
     response = getTextoData(rawData, 59, 1);
     delete[] response;
     if (length < 531) {
-        strcat(response, "{ \"resultado\": \"ERR\",\"mensaje\":\"Tamaño de array no permitido, ");
-        char text[10];
-        sprintf(text,"length: %d", length);
-        strcat(response,text);
-        strcat(response,"\" }");
+        strcpy(response, "{ \"resultado\": \"ERR\",\"mensaje\":\"Tamaño de array no compatible\" }");
         return response;
     } else {
         response = getTextoData(rawData, 48, 10);
@@ -67,7 +65,7 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
                     delta = 1;
                     deltaDepartment = 1;
                } else if (!strcmp("PubDSK_1", getTextoData(rawData, 94, 8))) {
-                    deltaArray[0] = 158;
+                   deltaArray[0] = 158;
                     deltaArray[1] = 174;
                     deltaArray[2] = 277;
                     deltaArray[3] = 375;
@@ -76,8 +74,11 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
                     deltaArray[6] = 602;
                     deltaArray[7] = 587;
                     deltaArray[8] = 596;
+                    delta=0;
                     deltaDepartment = 0;
                 } else {
+                   strcat(response, "No se pudo procesar tarjeta de identidad PubDSK_1 no encontrado: ");
+                   strcat(response, getTextoData(rawData, 94, 8));
                     goto error;
                 }
                 delete[] response;
@@ -87,6 +88,7 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
                 response = getTextoData(rawData, 22, 12);
                 strtol(response, &verification, 10);
                 if (*verification) {
+                     strcpy(response, "No se pudo procesar cédula tipo 2 algopasó con verification");
                     goto error;
                 } else {
                     delta = 0;
@@ -100,8 +102,9 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
                 if (!strcmp("PubDSK_1", response)) {
                     delta = 0;
                     deltaDepartment = 0;
-                } else if (!strcmp("PubDSK_1", getTextoData(rawData, 99, 8))) {
-                    deltaArray[0] = 163;
+                } else if (!strcmp("PubDSK_1", getTextoData(rawData, pdata, 8))) {
+
+                 deltaArray[0] = 158;
                     deltaArray[1] = 173;
                     deltaArray[2] = 266;
                     deltaArray[3] = 364;
@@ -111,39 +114,44 @@ char* getCedulaColombianaData(char * rawDataOriginal, int length) {
                     deltaArray[7] = 581;
                     deltaArray[8] = 590;
                     deltaDepartment = 0;
+                    delta=0;
                 } else {
+                     strcpy(response, "No se pudo procesar cédula tipo 3 PubDSK_1 no encontrado : ");
+                      strcat(response, getTextoData(rawData, pdata, 8));
                     goto error;
                 }
                 delete[] response;
                 break;
             default:
-
+ strcpy(response, "No se pudo definir el tipo de cédula");
                 goto error;
         }
 
         strcat(texto, "{\"resultado\": \"OK\",\"documentID\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[0], 10));
+        strcat(texto, getTextoData(rawData, deltaArray[0]+delta, 10));
         strcat(texto, "\",\"surename\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[1], 23));
+        strcat(texto, getTextoData(rawData, deltaArray[1]+delta, 23));
         strcat(texto, "\", \"secondSurename\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[2], 23));
+        strcat(texto, getTextoData(rawData, deltaArray[2]+delta, 23));
         strcat(texto, "\", \"firstName\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[3], 23));
+        strcat(texto, getTextoData(rawData, deltaArray[3]+delta, 23));
         strcat(texto, "\", \"secondName\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[4], 23));
+        strcat(texto, getTextoData(rawData, deltaArray[4]+delta, 23));
         strcat(texto, "\", \"birthday\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[5], 8));
+        strcat(texto, getTextoData(rawData, deltaArray[5]+delta, 8));
         strcat(texto, "\", \"bloodType\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[6], 3));
+        strcat(texto, getTextoData(rawData, deltaArray[6]+delta, 3));
         strcat(texto, "\", \"gender\": \"");
-        strcat(texto, getTextoData(rawData, deltaArray[7], 1));
+        strcat(texto, getTextoData(rawData, deltaArray[7]+delta, 1));
         strcat(texto, "\", \"placeBirth\": \"");
         strcat(texto, getTextoData(rawData, deltaArray[8]+ deltaDepartment, 5));
         strcat(texto, "\"}");
+      // strcat(texto, pdata+"");
+
         delete[] response;
         return texto;
 error:
-        strcpy(response, "{ \"resultado\": \"ERR\",\"mensaje\":\"Error al interpretar documento\" }");
+        strcat(response, "{ \"resultado\": \"ERR\",\"mensaje\":\"Error al interpretar documento\" }");
         return response;
     }
 }

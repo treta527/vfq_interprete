@@ -50,7 +50,7 @@
 					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/x86"
 				}
 			],
-			"output" : "/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/x86/libverifiquese.so",
+			"output" : "/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/x86/libverifiquese.so",
 			"toolchain" : "1492657421740662878"
 		}
 	},

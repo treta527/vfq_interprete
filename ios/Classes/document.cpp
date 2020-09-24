@@ -22,42 +22,41 @@ char *parse(int size, char *_arr, char *user, char *license) {
         0
     };
     if (lll(user, license)) {
-        string msg = base64_decode(_arr);
-        int n = msg.length();
-        char char_array[n + 1];
-        strcpy(char_array, msg.c_str());
-        char *output = getCedulaColombianaData(char_array, n);
-        int l = getSize34(output);
-       char *texto = new char[l] {
-        0
-    };
-        int x=0;
-        for (int i = 0; i < l; i++) {
-            //aqui pretendo remplazar la basura
-            if (int(output[i]) == -17
-                    || int(output[i]) == -65
-                    || int(output[i]) == -67
-                    || int(output[i]) == -17
-                    || int(output[i]) == -65
-                    || int(output[i]) == -67
-                    || int(output[i]) == -17
-                    || int(output[i]) == -65
-                    || int(output[i]) == -67
-                    || int(output[i]) == -17
-                    || int(output[i]) == -65
-                    || int(output[i]) == -67
-                    || int(output[i]) == -17
-                    || int(output[i]) == -65
-                    || int(output[i]) == -67) {
+    int p=0;
+        char *texto = new char[size] {
+            0
+        };
+        int ind = 0;
+        for (int i = 0; i < size; i++) {
+            uint8_t ch = _arr[i];
+            if (ch < 0x80) {
+             if ((ch & 0xff) == 80) {
+                                p=ind;
+                            }
+//                cout << _arr[i] << " ";
+                texto[ind++] = _arr[i];
             } else {
-                texto[x++]=output[i];
+              //  if ((ch & 0xff) == 175) {
+//                    cout << _arr[i] << " ";
+                   // texto[ind++] = 32;
+                    texto[ind++] = _arr[i];
+                //}
             }
-
         }
-        return texto;
+
+        char *output = getCedulaColombianaData(texto, size,p);
+        size = getSize34(output);
+        ind = 0;
+         for (int i = 0; i < size; i++) {
+             uint8_t ch = output[i];
+             if (ch < 0x80) {
+//                cout << output[i] << " ";
+                response[ind++]=output[i];
+             }
+        }
+        return response;
     } else {
         strcpy(response, "{ \"resultado\" = \"ERROR DE AUTENTICACIÓN\" }");
-
         return response;
     }
 }

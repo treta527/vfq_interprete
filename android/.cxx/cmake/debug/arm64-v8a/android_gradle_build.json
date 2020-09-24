@@ -50,7 +50,7 @@
 					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/arm64-v8a"
 				}
 			],
-			"output" : "/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so",
+			"output" : "/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so",
 			"toolchain" : "1492657421740662878"
 		}
 	},

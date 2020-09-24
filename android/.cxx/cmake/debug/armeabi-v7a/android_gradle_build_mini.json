@@ -10,7 +10,7 @@
       "artifactName": "verifiquese",
       "buildCommand": "/home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/armeabi-v7a --target verifiquese",
       "abi": "armeabi-v7a",
-      "output": "/home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/armeabi-v7a/libverifiquese.so"
+      "output": "/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/armeabi-v7a/libverifiquese.so"
     }
   }
 }

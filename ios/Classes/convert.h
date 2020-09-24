@@ -18,7 +18,7 @@ const int CEDULA_TIPO_02 = 2;
 const int CEDULA_TIPO_03 = 3;
 const int TARJETA_IDENTIDAD_TIPO_I3 = 4;
 
-char* getCedulaColombianaData(char * rawDataOriginal, int length);
+char* getCedulaColombianaData(char * rawDataOriginal, int length,int pdata);
 
 char* getTextoData(const char * datos, int i, int j);
 

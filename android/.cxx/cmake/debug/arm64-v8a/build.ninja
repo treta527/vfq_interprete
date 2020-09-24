@@ -92,9 +92,9 @@ build CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/i
 
 
 #############################################
-# Link the shared library /home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
+# Link the shared library /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
 
-build /home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so: CXX_SHARED_LIBRARY_LINKER__verifiquese CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o
+build /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so: CXX_SHARED_LIBRARY_LINKER__verifiquese CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments
   LINK_LIBRARIES = -latomic -lm
@@ -103,13 +103,13 @@ build /home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interpret
   PRE_LINK = :
   SONAME = libverifiquese.so
   SONAME_FLAG = -Wl,-soname,
-  TARGET_FILE = /home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
+  TARGET_FILE = /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
   TARGET_PDB = verifiquese.so.dbg
 # =============================================================================
 # Target aliases.
 
-build libverifiquese.so: phony /home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
-build verifiquese: phony /home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
+build libverifiquese.so: phony /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
+build verifiquese: phony /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
 # =============================================================================
 # Folder targets.
 
@@ -121,7 +121,7 @@ build verifiquese: phony /home/leonardo/CodeProjects/app/vfq_interprete/example/
 #############################################
 # The main all target.
 
-build all: phony /home/leonardo/CodeProjects/app/vfq_interprete/example/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
+build all: phony /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so
 
 #############################################
 # Make the all target the default.
