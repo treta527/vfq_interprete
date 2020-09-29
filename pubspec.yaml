@@ -1,9 +1,8 @@
 name: vfq_interprete
-description: A new flutter plugin project.
-version: 0.0.1
-author:
-homepage:
-
+description: Interprete de código pdf417 de documentos de identidad
+version: 0.0.2
+author: Leonardo Machado Jaimes
+homepage: https://github.com/treta527
 environment:
   sdk: ">=2.7.0 <3.0.0"
   flutter: ">=1.20.0 <2.0.0"
