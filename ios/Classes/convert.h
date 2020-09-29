@@ -5,26 +5,16 @@
  */
 
 /* 
- * File:   converter.h
+ * File:   convert.h
  * Author: leonardo
  *
- * Created on 11 de septiembre de 2020, 11:28 AM
+ * Created on 28 de septiembre de 2020, 10:38 AM
  */
 
-#ifndef CONVERTER_H
-#define CONVERTER_H
+#ifndef CONVERT_H
+#define CONVERT_H
 
-const int CEDULA_TIPO_02 = 2;
-const int CEDULA_TIPO_03 = 3;
-const int TARJETA_IDENTIDAD_TIPO_I3 = 4;
+Persona getCedulaColombianaData(char * rawDataOriginal, int length);
 
-char* getCedulaColombianaData(char * rawDataOriginal, int length,int pdata);
-
-char* getTextoData(const char * datos, int i, int j);
-
-char* decode(char* arr, char* response, int length);
-
-int getTipoCedula(const char* rawData, int length);
-
-#endif /* CONVERTER_H */
+#endif /* CONVERT_H */
 

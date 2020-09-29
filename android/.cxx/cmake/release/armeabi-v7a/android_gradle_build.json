@@ -48,6 +48,18 @@
 					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC    -c ",
 					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp",
 					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi16 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/armeabi-v7a"
 				}
 			],
 			"output" : "/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/release/obj/armeabi-v7a/libverifiquese.so",

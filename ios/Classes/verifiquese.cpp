@@ -24,7 +24,8 @@ extern "C" __attribute__((visibility("default"))) __attribute__((used)) char *co
 try{
   int len = atoi(size);
 
-  return parse(len, arr_, user, license);
+  //return parse(len, arr_, user, license);
+  return parse(arr_);
 }catch(...){
 char *response = new char[50];
  strcpy(response, "{ \"resultado\" = \"ERROR\" }");

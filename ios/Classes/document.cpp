@@ -3,71 +3,46 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-#include "cstring"
-#include "lll.h"
-#include "document.h"
-#include <vector>
-#include <iostream>
+#include "utilities.h"
+#include "persona.h"
 #include "convert.h"
-#include "base64.h"
 
-using namespace std;
+char *parse(char *rawData) {
+    char *output = new char[1024];
+    //    cout << "\n\nEntrada:\n\n" << rawData;
+    int len = getSize(rawData);
+    Persona p = getCedulaColombianaData(rawData, len);
 
-size_t getSize34(std::string str) {
-    return str.size();
-}
-
-char *parse(int size, char *_arr, char *user, char *license) {
+    strcat(output, "{\"resultado\": \"OK\",\"documentID\": \"");
+    strcat(output, p.documentID);
+    strcat(output, "\",\"surename\": \"");
+    strcat(output, p.surename);
+    strcat(output, "\", \"secondSurename\": \"");
+    strcat(output, p.secondSurename);
+    strcat(output, "\", \"firstName\": \"");
+    strcat(output, p.firstName);
+    strcat(output, "\", \"secondName\": \"");
+    strcat(output, p.secondName);
+    strcat(output, "\", \"birthday\": \"");
+    strcat(output, p.birthday);
+    strcat(output, "\", \"bloodType\": \"");
+    strcat(output, p.bloodType);
+    strcat(output, "\", \"gender\": \"");
+    strcat(output, p.gender);
+    strcat(output, "\", \"placeBirth\": \"");
+    strcat(output, p.placeBirth);
+    strcat(output, "\"}");
+    int size = getSize(output);
+    int ind = 0;
     char *response = new char[1024] {
         0
     };
-    if (lll(user, license)) {
-    int p=0;
-        char *texto = new char[size] {
-            0
-        };
-        int ind = 0;
-        for (int i = 0; i < size; i++) {
-            uint8_t ch = _arr[i];
-            if (ch < 0x80) {
-             if ((ch & 0xff) == 80) {
-                                p=ind;
-                            }
-//                cout << _arr[i] << " ";
-                texto[ind++] = _arr[i];
-            } else {
-              //  if ((ch & 0xff) == 175) {
-//                    cout << _arr[i] << " ";
-                   // texto[ind++] = 32;
-                    texto[ind++] = _arr[i];
-                //}
-            }
-        }
-
-        char *output = getCedulaColombianaData(texto, size,p);
-        size = getSize34(output);
-        ind = 0;
-         for (int i = 0; i < size; i++) {
-             uint8_t ch = output[i];
-             if (ch < 0x80) {
-//                cout << output[i] << " ";
-                response[ind++]=output[i];
-             }
-        }
-        return response;
-    } else {
-        strcpy(response, "{ \"resultado\" = \"ERROR DE AUTENTICACIÓN\" }");
-        return response;
-    }
-}
-
-int lll(const char *user, const char *license) {
-    char *userLocal = getlllu();
-    if (strcmp(user, userLocal) == 0) {
-        if (strcmp(license, getllll(user)) == 0) {
-            return true;
+    for (int i = 0; i < size; i++) {
+        uint8_t ch = output[i];
+        if (ch < 0x80) {
+//            cout << output[i] << " ";
+            response[ind++] = output[i];
         }
     }
-    return false;
-
+    return response;
 }

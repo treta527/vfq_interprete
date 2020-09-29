@@ -6,4 +6,4 @@ add_library( verifiquese
              SHARED
 
              # Provides a relative path to your source file(s).
-             ../ios/Classes/verifiquese.cpp ../ios/Classes/convert.cpp ../ios/Classes/lll.cpp ../ios/Classes/document.cpp ../ios/Classes/base64.cpp)
+             ../ios/Classes/verifiquese.cpp ../ios/Classes/convert.cpp ../ios/Classes/lll.cpp ../ios/Classes/document.cpp ../ios/Classes/base64.cpp ../ios/Classes/persona.cpp ../ios/Classes/utilities.cpp)

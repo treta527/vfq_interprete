@@ -86,6 +86,20 @@ build CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/i
   IN_ABS = /home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp
   OBJECT_DIR = CMakeFiles/verifiquese.dir
   OBJECT_FILE_DIR = CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes
+build CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp.o: CXX_COMPILER__verifiquese /home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp
+  DEFINES = -Dverifiquese_EXPORTS
+  DEP_FILE = CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
+  IN_ABS = /home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp
+  OBJECT_DIR = CMakeFiles/verifiquese.dir
+  OBJECT_FILE_DIR = CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes
+build CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp.o: CXX_COMPILER__verifiquese /home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp
+  DEFINES = -Dverifiquese_EXPORTS
+  DEP_FILE = CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp.o.d
+  FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC
+  IN_ABS = /home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp
+  OBJECT_DIR = CMakeFiles/verifiquese.dir
+  OBJECT_FILE_DIR = CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes
 
 # =============================================================================
 # Link build statements for SHARED_LIBRARY target verifiquese
@@ -94,7 +108,7 @@ build CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/i
 #############################################
 # Link the shared library /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/armeabi-v7a/libverifiquese.so
 
-build /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/armeabi-v7a/libverifiquese.so: CXX_SHARED_LIBRARY_LINKER__verifiquese CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o
+build /home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/armeabi-v7a/libverifiquese.so: CXX_SHARED_LIBRARY_LINKER__verifiquese CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp.o CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp.o
   LANGUAGE_COMPILE_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--exclude-libs,libunwind.a -Wl,--no-undefined -Qunused-arguments
   LINK_LIBRARIES = -latomic -lm

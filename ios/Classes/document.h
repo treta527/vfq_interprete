@@ -5,17 +5,16 @@
  */
 
 /* 
- * File:   document.h
+ * File:   documento.h
  * Author: leonardo
  *
- * Created on 11 de septiembre de 2020, 11:47 AM
+ * Created on 25 de septiembre de 2020, 02:14 PM
  */
 
-#ifndef DOCUMENT_H
-#define DOCUMENT_H
+#ifndef DOCUMENTO_H
+#define DOCUMENTO_H
 
-char *parse(int size, char *arr, char *user,char *license);
+char *parse(char *rawData);
 
-int lll(const char *user, const char *license);
+#endif /* DOCUMENTO_H */
 
-#endif /* DOCUMENT_H */

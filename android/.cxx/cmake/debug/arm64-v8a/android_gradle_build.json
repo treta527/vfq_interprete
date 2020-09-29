@@ -48,6 +48,18 @@
 					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
 					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp",
 					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/leonardo/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dverifiquese_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp",
+					"workingDirectory" : "/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/arm64-v8a"
 				}
 			],
 			"output" : "/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so",
