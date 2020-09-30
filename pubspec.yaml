@@ -1,6 +1,6 @@
 name: vfq_interprete
 description: Interprete de código pdf417 de documentos de identidad
-version: 0.0.2
+version: 0.0.3
 author: Leonardo Machado Jaimes
 homepage: https://github.com/treta527
 environment:
