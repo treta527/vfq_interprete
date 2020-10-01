@@ -6,6 +6,7 @@
 #include "persona.h"
 #include <string>
 #include <cstring>
+#include <memory>
 #include "utilities.h"
 using namespace std;
 
@@ -44,15 +45,17 @@ Persona getCedulaColombianaData(char * rawDataOriginal, int length) {
                     response = limpiarNumeros(rawDataOriginal);
                     p.extraerNumeros(getTextoData(response, 19, 100));
                 }
+                strcpy(p.documentType, "TI");
                 break;
             case CEDULA_TIPO_02:
                 response = getTextoData(rawData, 22, 12);
                 strtol(response, &verification, 10);
                 if (*verification) {
-                    //                    strcpy(response, "No se pudo procesar cédula tipo 2 algopasó con verification");
-                    //                    goto error;
+                    char e[70] = "No se pudo procesar cédula tipo 2 algopasó con verification";
+                    p.addError(e);
                 } else {
                     p.extraer(rawData, 0, 1);
+                    strcpy(p.documentType, "CC");
                 }
                 break;
             case CEDULA_TIPO_03:
@@ -65,11 +68,15 @@ Persona getCedulaColombianaData(char * rawDataOriginal, int length) {
                     response = limpiarNumeros(rawDataOriginal);
                     p.extraerNumeros(getTextoData(response, 19, 100));
                 }
+                strcpy(p.documentType, "CC");
                 break;
+            default:
+                char e[50] = "Tipo de cédula no identificado";
+                p.addError(e);
 
         }
         delete[] rawData;
-//        delete[] rawDataOriginal;
+        //        delete[] rawDataOriginal;
         delete[] verification;
     } else {
         char e[50] = "Tamaño de array no compatible";

@@ -23,6 +23,7 @@ using namespace std;
 class Persona {
 public:
     char documentID[23];
+    char documentType[3];
     char surename[23];
     char secondSurename[23];
     char firstName[23];
@@ -32,9 +33,11 @@ public:
     char gender[23];
     char placeBirth[23];
     char status[23];
-    char message[23];
+    char message[93];
+    char cedulaType[2];
 
     void extraerNombres(char *nombres) {
+        strcpy(cedulaType, "3");
         int len = getSize(nombres);
         int n = 0;
         int isLetter = 0;
@@ -71,6 +74,7 @@ public:
                             nfull = true;
                             break;
                         }
+                        // cout << "Genero\n" ;
                         gender[index++] = nombres[i];
                         gender[index + 1] = '\0';
                         break;
@@ -81,9 +85,9 @@ public:
                     default:
                         cout << "Valor dafault no manejado\n";
                 }
-                strcpy(status, "OK");
-                strcpy(message, "OK");
+
             } else {
+
                 if (isLetter == 1) {
                     isLetter = 0;
                     n++;
@@ -92,11 +96,14 @@ public:
             }
 
         }
+        strcpy(status, "OK");
+        message[0] = '\0';
     }
 
     void extraer(char *rawData, int delta, int delta2) {
+        strcpy(cedulaType, "2");
         strcpy(status, "OK");
-        strcpy(message, "OK");
+        message[0] = '\0';
         strcpy(documentID, getTextoData(rawData, 48 + delta, 10));
         strcpy(surename, getTextoData(rawData, 58 + delta, 23));
         strcpy(secondSurename, getTextoData(rawData, 81 + delta, 23));
@@ -115,28 +122,29 @@ public:
         char *xx = new char[len];
         int in = 0;
         for (int i = 0; i < len; i++) {
-         uint8_t ch = ced[i];
+            uint8_t ch = ced[i];
             if ((ch & 0x0ff) != 42 && ch >= 0x30 && ch <= 0x39) {
                 xx[in++] = ced[i];
-                 xx[in + 1] = '\0';
+                xx[in + 1] = '\0';
             }
         }
         len = getSize(xx);
-        strcpy(documentID,getTextoData(xx , len-10,len));
-       // strcpy(documentID,xx);
+        strcpy(documentID, getTextoData(xx, len - 10, len));
+        // strcpy(documentID,xx);
         delete[] ced;
         delete[] xx;
-        ced= getTextoData(data, 25, 46);
+        ced = getTextoData(data, 25, 46);
         len = getSize(ced);
         in = 0;
-         for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len; i++) {
             uint8_t ch = ced[i];
-                       if ((ch & 0x0ff) != 42 && ch >= 0x30 && ch <= 0x39) {
+            if ((ch & 0x0ff) != 42 && ch >= 0x30 && ch <= 0x39) {
                 xx[in++] = ced[i];
-                 xx[in + 1] = '\0';
+                xx[in + 1] = '\0';
             }
         }
-        strcpy(birthday,getTextoData(xx , 1,8));
+        strcpy(birthday, getTextoData(xx, 1, 8));
+        strcpy(placeBirth, getTextoData(xx, 9, 5));
     }
 
     void addError(char *error) {
@@ -151,6 +159,7 @@ public:
         gender[0] = '\0';
         birthday[0] = '\0';
         placeBirth[0] = '\0';
+        cedulaType[0] = '\0';
     }
 
     Persona();
@@ -161,4 +170,6 @@ private:
 };
 
 #endif /* PERSONA_H */
+
+
 
