@@ -8,10 +8,16 @@
 #include "convert.h"
 
 char *parse(char *rawData) {
+    Persona p;
     char *output = new char[1024];
-    //    cout << "\n\nEntrada:\n\n" << rawData;
-    int len = getSize(rawData);
-    Persona p = getCedulaColombianaData(rawData, len);
+    try {
+        //    cout << "\n\nEntrada:\n\n" << rawData;
+        int len = getSize(rawData);
+        p = getCedulaColombianaData(rawData, len);
+    } catch (...) {
+        char e[]="Algo pasó ... :(";
+        p.addError(e);
+    }
 
     strcat(output, "{\"resultado\": \"");
     strcat(output, p.status);
@@ -40,7 +46,7 @@ char *parse(char *rawData) {
     strcat(output, "\", \"cedulaType\": \"");
     strcat(output, p.cedulaType);
     strcat(output, "\"}");
-//    cout <<"Salida json: " << output << "\n";
+    //    cout <<"Salida json: " << output << "\n";
     int size = getSize(output);
     int ind = 0;
     char *response = new char[1024] {
