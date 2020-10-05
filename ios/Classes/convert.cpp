@@ -57,6 +57,7 @@ Persona getCedulaColombianaData(char * rawDataOriginal, int length) {
                     p.extraer(rawData, 0, 1);
                     strcpy(p.documentType, "CC");
                 }
+                delete[] verification;
                 break;
             case CEDULA_TIPO_03:
                 response = getTextoData(rawData, 24, 8);
@@ -71,13 +72,28 @@ Persona getCedulaColombianaData(char * rawDataOriginal, int length) {
                 strcpy(p.documentType, "CC");
                 break;
             default:
-                char e[50] = "Tipo de cédula no identificado";
-                p.addError(e);
-
+                response = limpiarArray(rawDataOriginal);
+                char *ce = getTextoData(response, 19, 3);
+                if (!strcmp("CE*", ce) || !strcmp("*CE", ce)) {
+//                    cout << "Nombres: " << response << "\n";
+                    p.extraerNombres(getTextoData(response, 24, 70));
+                    response = limpiarNumeros(rawDataOriginal);
+//                     cout << "Numeros: " << response << "\n";
+                    p.extraerNumeros(getTextoData(response, 19, 100));
+                    strcpy(p.documentType, "CE");
+                    p.secondName[0]='\0';
+                    p.birthday[0]='\0';
+                    p.bloodType[0]='\0';
+                    p.gender[0]='\0';
+                    p.placeBirth[0]='\0';
+                } else {
+                    char e[50] = "Tipo de cédula no identificado";
+                    p.addError(e);
+                }
         }
         delete[] rawData;
         //        delete[] rawDataOriginal;
-        delete[] verification;
+
     } else {
         char e[50] = "Tamaño de array no compatible";
         p.addError(e);
