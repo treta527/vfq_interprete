@@ -7,3 +7,5 @@
 1	789	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o	67baefca3beea209
 0	899	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o	ea174a1896f67205
 899	1023	0	/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so	e3d0d47e567080fb
+1	498	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	f1be81349c7547c4
+498	622	0	/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/arm64-v8a/libverifiquese.so	e3d0d47e567080fb

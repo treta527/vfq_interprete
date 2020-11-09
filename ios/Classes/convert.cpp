@@ -83,8 +83,8 @@ Persona getCedulaColombianaData(char * rawDataOriginal, int length) {
                     strcpy(p.documentType, "CE");
                     p.secondName[0]='\0';
                     p.birthday[0]='\0';
-                    p.bloodType[0]='\0';
-                    p.gender[0]='\0';
+//                    p.bloodType[0]='\0';
+//                    p.gender[0]='\0';
                     p.placeBirth[0]='\0';
                 } else {
                     char e[50] = "Tipo de cédula no identificado";
