@@ -1,14 +1,14 @@
-Executable : /home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/cmake
+Executable : /Users/venko/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
 arguments : 
--H/home/leonardo/CodeProjects/app/vfq_interprete/android
--B/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/debug/x86
+-H/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android
+-B/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/debug/x86
 -DANDROID_ABI=x86
 -DANDROID_PLATFORM=android-16
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/x86
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86
 -DCMAKE_BUILD_TYPE=Debug
--DANDROID_NDK=/home/leonardo/Android/Sdk/ndk/21.3.6528147
--DCMAKE_TOOLCHAIN_FILE=/home/leonardo/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake
--DCMAKE_MAKE_PROGRAM=/home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/ninja
+-DANDROID_NDK=/Users/venko/Library/Android/sdk/ndk/21.3.6528147
+-DCMAKE_TOOLCHAIN_FILE=/Users/venko/Library/Android/sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/venko/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
 -GAndroid Gradle - Ninja
 jvmArgs : 
 

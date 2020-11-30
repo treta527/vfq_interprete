@@ -1,11 +1,15 @@
 # ninja log v5
-0	33	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/lll.cpp.o	181e4df2a30e1839
-1	565	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/utilities.cpp.o	5ce7d9ffbf164687
-1	639	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/persona.cpp.o	2e80ab754837edeb
-0	665	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/document.cpp.o	851d3d8db50c4bd0
-0	695	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	a229ce390d7ba433
-1	776	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/base64.cpp.o	7a5cc5f9f0a02f25
-0	839	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/verifiquese.cpp.o	c331ca696f4d441d
-839	892	0	/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	4346b178721644b
-1	494	0	CMakeFiles/verifiquese.dir/home/leonardo/CodeProjects/app/vfq_interprete/ios/Classes/convert.cpp.o	a229ce390d7ba433
-494	548	0	/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	4346b178721644b
+0	67	0	CMakeFiles/verifiquese.dir/Users/venko/Desktop/Dayron/flutter/vfq_interprete/ios/Classes/lll.cpp.o	f858c0ced2e184b7
+1	491	0	CMakeFiles/verifiquese.dir/Users/venko/Desktop/Dayron/flutter/vfq_interprete/ios/Classes/persona.cpp.o	5b6a6c004a7178fb
+0	510	0	CMakeFiles/verifiquese.dir/Users/venko/Desktop/Dayron/flutter/vfq_interprete/ios/Classes/document.cpp.o	34b13ff474a17a37
+1	510	0	CMakeFiles/verifiquese.dir/Users/venko/Desktop/Dayron/flutter/vfq_interprete/ios/Classes/utilities.cpp.o	9ee57dc5191a15db
+0	542	0	CMakeFiles/verifiquese.dir/Users/venko/Desktop/Dayron/flutter/vfq_interprete/ios/Classes/convert.cpp.o	c0696a811d31c19
+0	662	0	CMakeFiles/verifiquese.dir/Users/venko/Desktop/Dayron/flutter/vfq_interprete/ios/Classes/verifiquese.cpp.o	6829287c16c81f16
+1	692	0	CMakeFiles/verifiquese.dir/Users/venko/Desktop/Dayron/flutter/vfq_interprete/ios/Classes/base64.cpp.o	f77024961f0ef6d2
+692	843	0	/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	8318892716c410d6
+2	236	0	/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	8318892716c410d6
+2	225	0	/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	8318892716c410d6
+1	178	0	/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	8318892716c410d6
+1	87	0	/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	8318892716c410d6
+2	112	0	/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	8318892716c410d6
+2	151	0	/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/debug/obj/x86_64/libverifiquese.so	8318892716c410d6

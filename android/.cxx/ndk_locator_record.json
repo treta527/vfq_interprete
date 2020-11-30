@@ -1,5 +1,5 @@
 {
-  "ndkFolder": "/home/leonardo/Android/Sdk/ndk/21.3.6528147",
+  "ndkFolder": "/Users/venko/Library/Android/sdk/ndk/21.3.6528147",
   "messages": [
     {
       "level": "INFO",
@@ -15,23 +15,23 @@
     },
     {
       "level": "INFO",
-      "message": "sdkFolder is /home/leonardo/Android/Sdk"
+      "message": "sdkFolder is /Users/venko/Library/Android/sdk"
     },
     {
       "level": "INFO",
-      "message": "Considering /home/leonardo/Android/Sdk/ndk-bundle in SDK ndk-bundle folder"
+      "message": "Considering /Users/venko/Library/Android/sdk/ndk-bundle in SDK ndk-bundle folder"
     },
     {
       "level": "INFO",
-      "message": "Considering /home/leonardo/Android/Sdk/ndk/21.3.6528147 in SDK ndk folder"
+      "message": "Considering /Users/venko/Library/Android/sdk/ndk/21.3.6528147 in SDK ndk folder"
     },
     {
       "level": "INFO",
-      "message": "Considering /home/leonardo/Android/Sdk/ndk/21.0.6113669 in SDK ndk folder"
+      "message": "Rejected /Users/venko/Library/Android/sdk/ndk-bundle in SDK ndk-bundle folder because that location has no source.properties"
     },
     {
       "level": "INFO",
-      "message": "No user requested version, choosing /home/leonardo/Android/Sdk/ndk/21.3.6528147 which is version 21.3.6528147"
+      "message": "No user requested version, choosing /Users/venko/Library/Android/sdk/ndk/21.3.6528147 which is version 21.3.6528147"
     }
   ]
 }

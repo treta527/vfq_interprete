@@ -10,6 +10,7 @@
  *
  * Created on 25 de septiembre de 2020, 02:54 PM
  */
+#ifdef __cplusplus
 #include <string>
 
 #ifndef UTILITIES_H
@@ -26,5 +27,7 @@ int getSize(std::string str);
 char* getTextoData(const char * datos, int i, int j);
 int getTipoCedula(const char* rawData, int length);
 #endif /* UTILITIES_H */
+#endif
+
 
 

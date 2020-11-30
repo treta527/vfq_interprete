@@ -5,7 +5,11 @@
   },
   {
     "level": "INFO",
-    "message": "rebuilding JSON /home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/arm64-v8a/android_gradle_build.json due to:"
+    "message": "rebuilding JSON /Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/release/arm64-v8a/android_gradle_build.json due to:"
+  },
+  {
+    "level": "INFO",
+    "message": "- command changed from previous, will remove stale json folder"
   },
   {
     "level": "INFO",
@@ -17,15 +21,19 @@
   },
   {
     "level": "INFO",
-    "message": "keeping json folder \u0027/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/arm64-v8a\u0027 but regenerating project"
+    "message": "removing stale contents from \u0027/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/release/arm64-v8a\u0027"
   },
   {
     "level": "INFO",
-    "message": "executing cmake Executable : /home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/home/leonardo/CodeProjects/app/vfq_interprete/android\n-B/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/arm64-v8a\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_PLATFORM\u003dandroid-16\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/release/obj/arm64-v8a\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003d/home/leonardo/Android/Sdk/ndk/21.3.6528147\n-DCMAKE_TOOLCHAIN_FILE\u003d/home/leonardo/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d/home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/ninja\n-GAndroid Gradle - Ninja\njvmArgs : \n\n"
+    "message": "created folder \u0027/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/release/arm64-v8a\u0027"
   },
   {
     "level": "INFO",
-    "message": "Executable : /home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/home/leonardo/CodeProjects/app/vfq_interprete/android\n-B/home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/arm64-v8a\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_PLATFORM\u003dandroid-16\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/home/leonardo/CodeProjects/firmese/democpp/demo01/build/vfq_interprete/intermediates/cmake/release/obj/arm64-v8a\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003d/home/leonardo/Android/Sdk/ndk/21.3.6528147\n-DCMAKE_TOOLCHAIN_FILE\u003d/home/leonardo/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d/home/leonardo/Android/Sdk/cmake/3.6.4111459/bin/ninja\n-GAndroid Gradle - Ninja\njvmArgs : \n\n"
+    "message": "executing cmake Executable : /Users/venko/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android\n-B/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/release/arm64-v8a\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_PLATFORM\u003dandroid-16\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/release/obj/arm64-v8a\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003d/Users/venko/Library/Android/sdk/ndk/21.3.6528147\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/venko/Library/Android/sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d/Users/venko/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-GAndroid Gradle - Ninja\njvmArgs : \n\n"
+  },
+  {
+    "level": "INFO",
+    "message": "Executable : /Users/venko/Library/Android/sdk/cmake/3.6.4111459/bin/cmake\narguments : \n-H/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android\n-B/Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/release/arm64-v8a\n-DANDROID_ABI\u003darm64-v8a\n-DANDROID_PLATFORM\u003dandroid-16\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/Users/venko/Desktop/Dayron/flutter/verifiquese_cedula_flutter/build/vfq_interprete/intermediates/cmake/release/obj/arm64-v8a\n-DCMAKE_BUILD_TYPE\u003dRelease\n-DANDROID_NDK\u003d/Users/venko/Library/Android/sdk/ndk/21.3.6528147\n-DCMAKE_TOOLCHAIN_FILE\u003d/Users/venko/Library/Android/sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d/Users/venko/Library/Android/sdk/cmake/3.6.4111459/bin/ninja\n-GAndroid Gradle - Ninja\njvmArgs : \n\n"
   },
   {
     "level": "INFO",
@@ -33,11 +41,11 @@
   },
   {
     "level": "INFO",
-    "message": "write build output /home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/arm64-v8a/build_output.txt"
+    "message": "write build output /Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/release/arm64-v8a/build_output.txt"
   },
   {
     "level": "INFO",
-    "message": "write command file /home/leonardo/CodeProjects/app/vfq_interprete/android/.cxx/cmake/release/arm64-v8a/build_command.txt"
+    "message": "write command file /Users/venko/Desktop/Dayron/flutter/vfq_interprete/android/.cxx/cmake/release/arm64-v8a/build_command.txt"
   },
   {
     "level": "INFO",

@@ -10,7 +10,7 @@
  *
  * Created on 25 de septiembre de 2020, 09:59 AM
  */
-
+#ifdef __cplusplus
 #ifndef PERSONA_H
 #define PERSONA_H
 
@@ -19,6 +19,7 @@
 #include <cstring>
 
 using namespace std;
+#endif
 
 class Persona {
 public:
